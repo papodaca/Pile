@@ -1,5 +1,16 @@
 {
   "port": 5000,
-  "db_url": "mongodb://localhost:27017",
-  "db_name": "blog"
+  "db": {
+    "host": "127.0.0.1",
+    "database": "blog",
+    "username": "blog",
+    "password": "blog"
+  },
+  "Settings": [
+    {
+      "Name": "PageCount",
+      "Type": "int",
+      "Default": 5
+    }
+  ]
 }

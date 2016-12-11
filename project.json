@@ -19,6 +19,7 @@
     "Microsoft.AspNetCore.Server.IISIntegration": "1.1.0",
     "Microsoft.AspNetCore.Server.Kestrel": "1.1.0",
     "Microsoft.AspNetCore.StaticFiles": "1.1.0",
+    "Microsoft.EntityFrameworkCore": "1.1.0",
     "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0",
     "Microsoft.EntityFrameworkCore.Sqlite.Design": {
       "version": "1.1.0",
@@ -45,7 +46,8 @@
       "version": "1.1.0-preview4-final",
       "type": "build"
     },
-    "Npgsql.EntityFrameworkCore.PostgreSQL": "1.1.0"
+    "Npgsql.EntityFrameworkCore.PostgreSQL": "1.1.0",
+    "CommonMark.NET": "0.14.0"
   },
 
   "tools": {
@@ -98,6 +100,6 @@
   },
 
   "tooling": {
-    "defaultNamespace": "ApodacaBlog"
+    "defaultNamespace": "Pile"
   }
 }
