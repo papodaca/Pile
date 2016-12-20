@@ -13,8 +13,11 @@ namespace Pile.Controllers {
     public IActionResult Article(string article) {
       var title = article.Replace('_', ' ');
       var post = _context.Posts
-        .Where(p => p.Title == title)
-        .First();
+        .Where(p => p.Published)
+        .Single(p => p.Title == title);
+      if(post == null) {
+        return NotFound();
+      }
       return Json(post);
     }
   }

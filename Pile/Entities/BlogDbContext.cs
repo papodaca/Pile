@@ -12,5 +12,6 @@ namespace Pile.Entities {
     public DbSet<Setting> Settings { get; set; }
     public DbSet<Style> Styles { get; set; }
     public DbSet<Template> Templates { get; set; }
+    public DbSet<Tag> Tags { get; set; }
   }
 }

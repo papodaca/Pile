@@ -1,0 +1,2 @@
+web: ASPNETCORE_ENVIRONMENT=Development dotnet run
+client: sh -c 'rm -r wwwroot/* || true && cd wwwsrc && npm start'

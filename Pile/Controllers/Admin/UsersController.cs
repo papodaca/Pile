@@ -6,14 +6,12 @@ using Pile.Entities;
 using Pile.Models;
 
 namespace Pile.Controllers.Admin {
-  [Authorize]
-  [Route("Admin/Users")]
+  [Authorize, Route("Admin/Users")]
   public class UsersController : BaseController {
     public UsersController(PileDbContext context) :base(context) {
     }
 
-    [Authorize]
-    [HttpGet("")]
+    [Authorize, HttpGet]
     public IActionResult Index() {
       var users = _context.Users.ToList();
       return Json(users);

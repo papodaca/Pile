@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
@@ -13,8 +14,11 @@ namespace Pile.Controllers {
     public IActionResult Page(string page) {
       var title = page.Replace('_', ' ');
       var pageModel = _context.Pages
-        .Where(p => p.Title == title)
-        .First();
+        .Where(p => p.Published)
+        .Where(p => p.Title == title).First();
+      if(pageModel != null) {
+        return NotFound();
+      }
       return Json(pageModel);
     }
   }

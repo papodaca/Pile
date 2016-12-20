@@ -3,3 +3,5 @@ bin
 obj
 .vscode
 wwwroot/*
+npm-debug.log
+npm-debug.log.*

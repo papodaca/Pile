@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+
+#app {
+  height: 100%;
+}
+
+#app div[data-reactroot] {
+  height: 100%;
+}
+.pt-dark {
+  background-color: #293742;
+}
+.container {
+  display: flex;
+}
+.container.login {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    #3DCC91 0%,
+    #15B371 100%
+  );
+}
+.container.login .login-container {
+  width: auto;
+  margin-top: -25%;
+}
+.container.login .login-container .pt-input {
+  width: 200px;
+}
+.container.with-nav {
+  padding-top: 60px;
+}
+.center {
+  text-align: center;
+}
