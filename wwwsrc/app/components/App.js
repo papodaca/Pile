@@ -45,19 +45,20 @@ class App extends React.Component {
     let modeButton;
     if(this.state.dark) {
       modeButton = (
-        <Tooltip content="Dark Mode" position={Position.LEFT}>
-          <button
-            className="pt-button pt-minimal pt-icon-moon"
-            onClick={this.toggleDarkMode.bind(this)}></button>
-        </Tooltip>
-      );
-    } else {
-      modeButton = (
         <Tooltip content="Light Mode" position={Position.LEFT}>
           <button
             className="pt-button pt-minimal pt-icon-flash"
             onClick={this.toggleDarkMode.bind(this)}></button>
         </Tooltip>
+      );
+    } else {
+      modeButton = (
+        <Tooltip content="Dark Mode" position={Position.LEFT}>
+          <button
+            className="pt-button pt-minimal pt-icon-moon"
+            onClick={this.toggleDarkMode.bind(this)}></button>
+        </Tooltip>
+
       );
     }
 
@@ -69,7 +70,7 @@ class App extends React.Component {
           </div>
           <div className="pt-navbar-group pt-align-right">
             {modeButton}
-            <span class="pt-navbar-divider"></span>
+            <span className="pt-navbar-divider"></span>
             <Tooltip content="Logout" position={Position.LEFT}>
               <button className="pt-button pt-minimal pt-icon-log-out" onClick={this.logOut.bind(this)}></button>
             </Tooltip>
